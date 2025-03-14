@@ -1,2 +1,2 @@
-# documentation.practices.software.cleancode.katas.recycling-station
+# Recycling Station
 Command Pattern Kata 
