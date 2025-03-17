@@ -65,3 +65,8 @@ should be passed to, and steps to take to process it.
    cmake --build .
    ctest
    ```
+
+The existing tests do not test anything beyond the basic ability to invoke
+function `recycle()`. Make sure to extend them before you touch any piece of
+existing code! For new code, feel free to write new test cases to ensure it
+works.
