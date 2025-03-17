@@ -20,7 +20,7 @@ We need to add new type of garbage: `OrganicWaste`.
 It is to be processed on a new station, `Composter`, by its method `compost()`.
 
 The way it is written now, `recycle()` has to know about what all stations take
-what steps are involved for each piece. 
+and what steps are involved for each garbage piece.
 
 Look at its signature : `recycle(list[Garbage],  smelter, crusher)`
 Also, look at its body, it is full of type checks, meaning that needs to know
