@@ -3,6 +3,6 @@
 
 void better_recycle(std::vector<Command *> &commands) {
     for (auto cmd: commands) {
-        cmd->execute();
+        (*cmd)();
     }
 }
