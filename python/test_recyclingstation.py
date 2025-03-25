@@ -3,7 +3,7 @@
 import unittest
 
 from garbage import MetalType, Garbage, ScrapMetal, Glass
-
+from units import Kilogram, CubicMeter
 from recyclingstation import Smelter, Crusher, recycle
 
 
@@ -17,8 +17,8 @@ class SideEffectIntegration(unittest.TestCase):
     def test_recycle(self):
         sm = Smelter()
         cr = Crusher()
-        m1 = ScrapMetal(MetalType.Aluminum, weight=10)
-        g2 = Glass(volume=3)
+        m1 = ScrapMetal(MetalType.Aluminum, weight=Kilogram(10))
+        g2 = Glass(volume=CubicMeter(3))
 
         load = [m1, g2]
         recycle(load, sm, cr)
